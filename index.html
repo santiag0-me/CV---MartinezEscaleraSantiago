@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/fd3043f6d3.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script rel="javascript" src="js.js" defer></script>
+
+    <title>CV - Martinez Escalera Santiago</title>
+
+    <link rel="icon" type="image/x-icon" href="./Imagenes/cvperson1.ico">
+    <meta property="og:title" content="Curriculum Vitae" />
+    <meta property="og:type" content="informacion personal" />
+    <meta property="og:url" content=" http://www.example.com" />
+    <meta property="og:description" content="Proyecto Final - Argentina Programa - HTML - CSS - JS" />
+</head>
+<body>
+<!--Encabezado del CV (Foto - nombre - profesion )-->
+      <header>
+        <div class="row">
+            <div class="container-foto-perfil">
+                <img class="foto" id="picture" src="./Imagenes/cv-foto.png" width="200px" alt="Foto de perfil - CV."/>
+            </div>
+            <hgroup class="container cabecera">
+                <h1 class="titulo" id="fullname">MARTINEZ ESCALERA SANTIAGO</h1>
+                <h2 class="oficio">ESTUDIANTE DE ING ELECTRICA</h2>
+            </hgroup>
+        </div>
+    </header>
+<!--Cuerpo del CV (lo divido en dos rectangulos)-->
+      <div class="row">
+        <!-- barra lateral izquierda aside (info personal - idiomas - contacto)-->
+            <aside>
+                <div class="card acerca">
+                    <h3 class="card-title">RESUMEN PERSONAL</h3>
+                    <p class="card-font"> Me considero una persona muy proactiva,
+                        honesto, responsable y ordenado. Me
+                        gustan los desafíos y salir constantemente
+                        de mi zona de confort. Como estudiante
+                        siento enormes ganas de plasmar en el
+                        campo laboral mis conocimientos teóricos
+                        aprendidos.</p>
+                        <h3 class="card-title">IDIOMAS</h3>
+                            <ul class="card-font"> - Español: Nativo</ul>
+                            <ul class="card-font"> - Ingles: Nivel B1</ul>
+                        <h3 class="card-title">HABILIDADES BLANDAS</h3>
+                            <ul class="card-font"> - Puntualidad</ul>
+                            <ul class="card-font"> - Responsabilidad</ul>
+                            <ul class="card-font"> - Liderazgo</ul>
+                            <ul class="card-font"> - Trabajo en equipo</ul>
+                            <ul class="card-font"> - Predisposicion a aprender</ul>
+                            <ul class="card-font"> - Buena capacidad de adaptacion</ul>
+                </div>
+                <div class="card">
+                    <h3 class="ref-title">Para mas informacion...</h3>
+                    <button class="button" id="datosContacto">CONTACTO</button>
+                        <address>
+                            <p id="telefono" class="card-font"><i class="fa-solid fa-phone"></i></p>
+                            <p id="mail" class="card-font"><i class="fa-solid fa-square-envelope"></i></p>
+                            <p id="domicilio" class="card-font"><i class="fa-solid fa-location-dot"></i></p>
+                        </address>
+                </div>
+            </aside>
+        
+        <!-- barra lateral derecha cuerpo del CV (info personal - estudios univ/secund/capacitaciones - aptitudes informaticas (programas/programacion/edicion))-->
+        <main>
+            <section class="container">
+                    <h3 class="card-title">INFORMACION PERSONAL</h3>
+                        <ul class="card-font"> - Lugar de Nacimiento: San Miguel de Tucuman, Tucuman, Argentina</ul>
+                        <ul class="card-font"> - Estado Civil: Soltero</ul>
+                        <ul class="card-font"> - DNI: 39731222</ul>
+            </section>
+            <section class="container">
+                    <h3 class="card-title">ESTUDIOS UNIVERSITARIOS</h3>
+                    <ul class="card-font"> - Actualmente me encuentro en un avance del 70% de la carrera de Ing. Electrica</ul>
+                </section>
+            <section class="container">
+                    <h3 class="card-title"> EDUCACION </h3>
+                            <details>
+                                <summary>ESTUDIOS SECUNDARIOS - TITULO - Tecnico Mecanico Electricista</summary>
+                                    <h4 class="ref-title"> Instituto Tecnico - UNT </h4>
+                                        <ul class="summary-list">
+                                            <h5 class="ref-title"> Titulos Intermedios </h5>
+                                                <li>Dibujante Tecnico.</li>
+                                                <li>Operador de maquinas y herramientas.</li>
+                                                <h5 class="ref-title"> Reconocimientos y distinciones </h5>
+                                                <li>Olimpiada Argentina de Quimica - Certamen Nacional.</li>
+                                                <li>Olimpiada Argentina de Matematicas - Certamen Nacional.</li>
+                                        </ul>
+                            </details>
+            </section>
+            <section class="container">
+                <h3 class="card-title"> CAPACITACIONES </h3>
+                 <details>
+                <summary>CAPACITACIONES</summary>
+                <ul class="summary-list">
+                    <li>2023 - Curso Fundamentos de la gestion del tiempo</li>
+                    <li>2022 - Curso Introduccion a Python</li>
+                    <li>2020 - Medicion de descargas parciales</li>
+                    <li>2019 - Curso de plataforma Arduino</li>
+                    <li>2019 - Seminario de "Operacion y control de turbinas a gas"</li>
+                </ul>
+            </details>
+            </section>
+            <section class="container">
+                <h3 class="card-title"> APTITUDES INFORMATICAS </h3>
+                <details>
+                <summary>APTITUDES INFORMATICAS</summary>
+                <ul class="summary-list">
+                    <h5 class="ref-title"> Programas de Calculo - Diseño </h5>
+                        <li> Manejo de AUTOCAD</li>
+                        <li> Manejo de SolidWorks</li>
+                        <li> Software MATLAB</li>
+                    <h5 class="ref-title"> Lenguajes de PROGRAMACION </h5>
+                        <li> Python - Basico</li>
+                        <li> Lenguaje C</li>
+                    <h5 class="ref-title"> Programas de EDICION </h5>
+                        <li> Photoshop</li>
+                        <li> Lightroom</li>
+                        <li> Adobe Premier</li>
+                        <li> Paquete de Microsoft Office (Word,Excel,Power Point)</li>
+                </ul>
+            </details>
+            </section>
+            <footer>
+                <small class="copyright">2023 &copy; Martinez Escalera Santiago</small>
+            </footer>
+        </main>
+    </div>
+</div>
+</body>
+</html>
